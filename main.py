@@ -1,9 +1,12 @@
-name1 = 'Процент'
-print(name1)
-name = '1 Процент'
-print(name)
-my_list = ['Процента', 'Процентов']
-for i in range(2, 5):
-    print(i, my_list[0])
-for i1 in range(5, 100):
-    print(i1, my_list[1])
+for i in range(100):
+    new_str=str(i+1)
+    new_list = list(new_str)
+    if int(new_list[-1]) == 1 and i+1 != 11:
+        print('{} Процент'.format(i + 1))
+    elif int(new_list[-1]) > 1 and int(new_list[-1]) <= 4:
+        if  i+1> 10 and i+1<= 14:
+            print('{} Процентов'.format(i + 1))
+        else:
+            print('{} Процента'.format(i + 1))
+    else:
+        print('{} Процентов'.format(i + 1))
